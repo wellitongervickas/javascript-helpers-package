@@ -24,7 +24,7 @@ const sessionHelper = (() => {
     *
   */
 
-  const getFromStorage = (key) => {
+  const getFromStorage = key => {
     const data = sessionStorage.getItem(key);
     return (data) ? JSON.parse(atob(data)) : null;
   };
@@ -33,14 +33,13 @@ const sessionHelper = (() => {
    * @deleteOfStorage()
    *
    * This function will delete a session storage
-   * by key name
    *
    * @public
    *
   */
 
-  const deleteOfStorage = name => {
-    sessionStorage.removeItem(name);
+  const deleteOfStorage = key => {
+    sessionStorage.removeItem(key);
   };
 
   return {

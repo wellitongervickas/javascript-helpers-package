@@ -153,7 +153,7 @@ const textHelper = (() => {
    *
   */
 
-  const convertToAmount = (value) => {
+  const convertToAmount = value => {
     if (value) {
       value = String(value);
       return value.replace('.', ',');

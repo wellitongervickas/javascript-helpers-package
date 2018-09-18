@@ -24,7 +24,7 @@ const cookiesHelper = (() => {
     *
   */
 
-  const getFromCookies = (key) => {
+  const getFromCookies = key => {
     if (key) {
       const escape = (s) => s.replace(/([.*+?^${}()|[\]/\\])/g, '\\$1');
       let match = document.cookie.match(RegExp('(?:^|;\\s*)' + escape(key) + '=([^;]*)'));
@@ -39,7 +39,7 @@ const cookiesHelper = (() => {
     *
   */
 
-  const deleteFromCookies = (key) => {
+  const deleteFromCookies = key => {
     if (key) {
       document.cookie = `${encodeURIComponent(key)}=; expires=; path=/`;
     }

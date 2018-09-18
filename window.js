@@ -11,8 +11,23 @@ const windowHelper = (() => {
 
   const scrollTo = el => el ? el.scrollIntoView({ behavior: 'smooth' }) : null;
 
+  /**
+   * @setTitle()
+   *
+   * This function will update browser title
+   *
+   * @public
+   *
+  */
+
+  const setTitle = (title, appName = null) => {
+
+    if (title) document.title = `${title} ${appName ? ' | ' + appName: ''}`;
+  }
+
   return {
-    scrollTo
+    scrollTo,
+    setTitle
   }
 })();
 
