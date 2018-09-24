@@ -5,7 +5,7 @@ import phoneHelper from './phone';
 const textHelper = (() => {
 
   /**
-   * @convertDateUtc() => (less params)
+   * @function convertDateUtc
    *
    * This function will append more
    * more 3 hours
@@ -19,7 +19,7 @@ const textHelper = (() => {
   }
 
   /**
-   * @convertDate()
+   * @function convertDate
    *
    * When backward is false return Brazil date 15/11/2018 else american date 2018-11-15.
    *
@@ -60,7 +60,7 @@ const textHelper = (() => {
   }
 
   /**
-   * @firstCharUpper()
+   * @function firstCharUpper
    *
    * Get first chart of text and set to uppercase
    *
@@ -73,7 +73,7 @@ const textHelper = (() => {
   }
 
   /**
-   * @randNumber()
+   * @function randNumber
    *
    * Generate a random number
    *
@@ -86,7 +86,7 @@ const textHelper = (() => {
   }
 
   /**
-   * @parseNumber()
+   * @function parseNumber
    *
    * @public
    *
@@ -113,7 +113,7 @@ const textHelper = (() => {
   }
 
   /**
-   * @onlyNumbers()
+   * @function onlyNumbers
    *
    * @public
    *
@@ -123,7 +123,7 @@ const textHelper = (() => {
 
 
   /**
-   * @convertToDecimal()
+   * @function convertToDecimal
    *
    * @public
    *
@@ -132,8 +132,7 @@ const textHelper = (() => {
   const convertToDecimal = (value, toFixed = true) => {
     if (value) {
 
-      value = String(value);
-      value = value.replace('.','');
+      value = String(value).replace('.','');
       value = value.replace(',','.');
 
       if (toFixed) {
@@ -147,7 +146,7 @@ const textHelper = (() => {
   }
 
   /**
-   * @convertToAmount()
+   * @function convertToAmount
    *
    * @public
    *
@@ -155,15 +154,14 @@ const textHelper = (() => {
 
   const convertToAmount = value => {
     if (value) {
-      value = String(value);
-      return value.replace('.', ',');
+      return String(value).replace('.', ',');
     }
 
     return 0;
   }
 
   /**
-   * @crop()
+   * @function crop
    *
    * Crop text with max text length
    *

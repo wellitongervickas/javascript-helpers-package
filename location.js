@@ -3,7 +3,7 @@ import createHistory from 'history/createBrowserHistory';
 const locationHelper = (() => {
 
   /**
-   * @setRoute()
+   * @function setRoute
    *
    * This function will set new pathname
    * when can't get a route history
@@ -20,7 +20,7 @@ const locationHelper = (() => {
   }
 
   /**
-   * @getSlug()
+   * @function getSlug
    *
    * @public
    *

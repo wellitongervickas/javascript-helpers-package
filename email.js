@@ -1,7 +1,7 @@
 const emailHelper = (() => {
 
   /**
-   * @isValid()
+   * @function isValid
    *
    * @public
    *

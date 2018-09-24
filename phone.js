@@ -1,7 +1,7 @@
 const phoneHelper = (() => {
 
   /**
-   * @parse()
+   * @function parse
    *
    * @public
    *

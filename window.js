@@ -1,7 +1,7 @@
 const windowHelper = (() => {
 
   /**
-   * @scrollTo()
+   * @function scrollTo
    *
    * https://developer.mozilla.org/pt-BR/docs/Web/API/Element/scrollIntoView
    *
@@ -12,7 +12,7 @@ const windowHelper = (() => {
   const scrollTo = el => el ? el.scrollIntoView({ behavior: 'smooth' }) : null;
 
   /**
-   * @setTitle()
+   * @function setTitle
    *
    * This function will update browser title
    *

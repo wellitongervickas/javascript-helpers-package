@@ -1,7 +1,7 @@
 const cookiesHelper = (() => {
 
   /**
-    * @saveIntoCookies()
+    * @function saveIntoCookies
     *
     * @public
     *
@@ -18,7 +18,7 @@ const cookiesHelper = (() => {
   };
 
   /**
-    * @getFromCookies()
+    * @function getFromCookies
     *
     * @public
     *
@@ -33,7 +33,7 @@ const cookiesHelper = (() => {
   };
 
   /**
-    * @deleteFromCookies()
+    * @function deleteFromCookies
     *
     * @public
     *

@@ -1,7 +1,7 @@
 const sessionHelper = (() => {
 
   /**
-    * @saveInStorage()
+    * @function saveInStorage
     *
     * This method will save a data of strings in the browser memory
     * using session storage passing a key and payload
@@ -15,7 +15,7 @@ const sessionHelper = (() => {
   };
 
   /**
-    * @getFromStorage()
+    * @function getFromStorage
     *
     * This method will get a data of the browser memory
     * using session storage passing a key to return a data or null
@@ -30,7 +30,7 @@ const sessionHelper = (() => {
   };
 
   /**
-   * @deleteOfStorage()
+   * @function deleteOfStorage
    *
    * This function will delete a session storage
    *

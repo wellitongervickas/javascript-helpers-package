@@ -1,7 +1,7 @@
 const listHelper = (() => {
 
   /**
-   * @countValues()
+   * @function countValues
    *
    * This function will get total value
    * by property or default value
@@ -21,7 +21,7 @@ const listHelper = (() => {
   }
 
   /**
-   * @convertToArray()
+   * @function convertToArray
    *
    * This function receive a object
    * to convert by array
@@ -41,7 +41,7 @@ const listHelper = (() => {
   }
 
   /**
-   * @renderListOptions()
+   * @function renderListOptions
    *
    * Create list of options
    * to put on select field
@@ -53,11 +53,9 @@ const listHelper = (() => {
   const renderListOptions = (list, property) => {
 
     if (list) {
-      const newList = list.map(item => {
+      return list.map(item => {
         return { value: item.id, label: property ? item[property] : item.label };
       });
-
-      return newList;
     }
 
     return [];
