@@ -98,8 +98,21 @@ const textHelper = (() => {
     text = onlyNumbers(text);
 
     switch (type) {
+
       case 'cpf':
         return `${text.slice(0, 3)}.${text.slice(3, 6)}.${text.slice(6, 9)}-${text.slice(9, 11)}`;
+
+      case 'cnpj':
+        return `${text.slice(0, 2)}.${text.slice(3, 6)}.${text.slice(6, 9)}/${text.slice(9, 12)}-${text.slice(12)}`;
+
+      case 'document':
+        if (text.length <= 13) {
+          return `${text.slice(0, 3)}.${text.slice(3, 6)}.${text.slice(6, 9)}-${text.slice(9, 11)}`;
+        } else if (text.length >= 14) {
+          return `${text.slice(0, 2)}.${text.slice(2, 5)}.${text.slice(5, 8)}/${text.slice(8, 12)}-${text.slice(12)}`;
+        } else {
+          return text;
+        }
 
       case 'zipcode':
         return `${text.slice(0, 5)}-${text.slice(5, 8)}`;
