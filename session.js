@@ -6,11 +6,13 @@ const sessionHelper = (() => {
     * This method will save a data of strings in the browser memory
     * using session storage passing a key and payload
     *
+    * @param { string } key
+    * @param { object | string } payload
     * @public
     *
   */
 
-  const saveInStorage = (key, payload = null) => {
+  const saveInStorage = (key, payload = {}) => {
     sessionStorage.setItem(key, btoa(JSON.stringify(payload)))
   };
 
@@ -20,6 +22,8 @@ const sessionHelper = (() => {
     * This method will get a data of the browser memory
     * using session storage passing a key to return a data or null
     *
+    * @param { string } key
+    * @return { object }
     * @public
     *
   */
@@ -34,6 +38,7 @@ const sessionHelper = (() => {
    *
    * This function will delete a session storage
    *
+   * @param { string } key
    * @public
    *
   */

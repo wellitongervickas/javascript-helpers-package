@@ -8,6 +8,7 @@ const locationHelper = (() => {
    * This function will set new pathname
    * when can't get a route history
    *
+   * @param { string } route
    * @public
    *
   */
@@ -22,6 +23,7 @@ const locationHelper = (() => {
   /**
    * @function getSlug
    *
+   * @return { string }
    * @public
    *
   */

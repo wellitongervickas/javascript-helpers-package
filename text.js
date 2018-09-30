@@ -10,6 +10,9 @@ const textHelper = (() => {
    * This function will append more
    * more 3 hours
    *
+   * @param { date } date
+   * @param { string } format
+   * @return { date }
    * @public
    *
   */
@@ -29,6 +32,12 @@ const textHelper = (() => {
    * When enabled timezone, return less 3 hours
    * Ex: 22:00:00 returns 19:00:00
    *
+   *
+   * @param { date } date
+   * @param { boolean | null } backward
+   * @param { boolean | null } withTime
+   * @param { boolean | null } timeZone
+   * @return { date }
    * @public
    *
   */
@@ -64,6 +73,8 @@ const textHelper = (() => {
    *
    * Get first chart of text and set to uppercase
    *
+   * @param { string } string
+   * @return { string }
    * @public
    *
   */
@@ -77,6 +88,8 @@ const textHelper = (() => {
    *
    * Generate a random number
    *
+   * @param { number } max
+   * @return { number }
    * @public
    *
   */
@@ -88,6 +101,9 @@ const textHelper = (() => {
   /**
    * @function parseNumber
    *
+   * @param { string } text
+   * @param { string } type
+   * @return { string }
    * @public
    *
   */
@@ -128,16 +144,20 @@ const textHelper = (() => {
   /**
    * @function onlyNumbers
    *
+   * @param { string } value
+   * @return { string }
    * @public
    *
   */
 
   const onlyNumbers = value => value ? value.replace(/[^\d]/g,'') : '';
 
-
   /**
    * @function convertToDecimal
    *
+   * @param { string | number } value
+   * @param { boolean | null } toFixed
+   * @returns { number }
    * @public
    *
   */
@@ -161,6 +181,8 @@ const textHelper = (() => {
   /**
    * @function convertToAmount
    *
+   * @param { number | string } value
+   * @return { number | string }
    * @public
    *
   */
@@ -178,6 +200,9 @@ const textHelper = (() => {
    *
    * Crop text with max text length
    *
+   * @param { string } text
+   * @param { number | null } length
+   * @return { string }
    * @public
    *
   */

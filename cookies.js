@@ -3,6 +3,11 @@ const cookiesHelper = (() => {
   /**
     * @function saveIntoCookies
     *
+    * This function will save a payload
+    * in browser cookies
+    *
+    * @param { string } key
+    * @param { object | string } payload
     * @public
     *
   */
@@ -20,6 +25,11 @@ const cookiesHelper = (() => {
   /**
     * @function getFromCookies
     *
+    * This function will get a key
+    * from browser cookies and return
+    *
+    * @param { string } key
+    * @return { object }
     * @public
     *
   */
@@ -35,6 +45,10 @@ const cookiesHelper = (() => {
   /**
     * @function deleteFromCookies
     *
+    * This function will remove
+    * a key from browser cookies
+    *
+    * @param { string } key
     * @public
     *
   */

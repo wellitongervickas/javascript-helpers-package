@@ -3,6 +3,11 @@ const emailHelper = (() => {
   /**
    * @function isValid
    *
+   * This function will validate
+   * a email and return true/false
+   *
+   * @param { string } email
+   * @return { boolean }
    * @public
    *
   */

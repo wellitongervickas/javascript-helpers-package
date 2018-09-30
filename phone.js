@@ -3,30 +3,28 @@ const phoneHelper = (() => {
   /**
    * @function parse
    *
+   * List of types
+   *
+   * (99) 9999-9999
+   * (99) 99999-9999
+   *
+   * 55 (99) 9999-9999
+   * 55 (99) 99999-9999
+   *
+   * 0[0 to 9]00 555 5555
+   *
+   * @param { number | string } number
+   * @return { string }
    * @public
    *
   */
 
-  const parse = (number) => {
+  const parse = number => {
 
     if (number) {
 
       // Remove special chars
       number = number.replace(/[^\d]/g,'');
-
-      /**
-       *
-       * List of types
-       *
-       * (99) 9999-9999
-       * (99) 99999-9999
-       *
-       * 55 (99) 9999-9999
-       * 55 (99) 99999-9999
-       *
-       * 0[0 to 9]00 555 5555
-       *
-      */
 
       if (number.match(/^([5]{2})\d+/g) && number.length >= 12) {
 

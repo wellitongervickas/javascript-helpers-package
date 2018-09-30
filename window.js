@@ -5,6 +5,7 @@ const windowHelper = (() => {
    *
    * https://developer.mozilla.org/pt-BR/docs/Web/API/Element/scrollIntoView
    *
+   * @param { object } el
    * @public
    *
   */
@@ -16,6 +17,8 @@ const windowHelper = (() => {
    *
    * This function will update browser title
    *
+   * @param { string } title
+   * @param { string | null } appName
    * @public
    *
   */
