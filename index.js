@@ -1,11 +1,11 @@
-import cookiesHelper from './cookies';
-import emailHelper from './email';
-import sessionHelper from './session';
-import textHelper from './text';
-import windowHelper from './window';
-import listHelper from './list';
-import locationHelper from './location'
-import phoneHelper from './phone';
+import * as cookiesHelper from './cookies';
+import * as emailHelper from './email';
+import * as sessionHelper from './session';
+import * as textHelper from './text';
+import * as windowHelper from './window';
+import * as listHelper from './list';
+import * as locationHelper from './location'
+import * as phoneHelper from './phone';
 
 export {
   cookiesHelper,

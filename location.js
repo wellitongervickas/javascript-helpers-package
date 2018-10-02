@@ -1,40 +1,30 @@
-import createHistory from 'history/createBrowserHistory';
+/**
+ * @function setRoute
+ *
+ * This function will set new pathname
+ * when can't get a route history
+ *
+ * @param { string } route
+ * @public
+ *
+*/
 
-const locationHelper = (() => {
-
-  /**
-   * @function setRoute
-   *
-   * This function will set new pathname
-   * when can't get a route history
-   *
-   * @param { string } route
-   * @public
-   *
-  */
-
-  const setRoute = route => {
-    if (route) {
-      const history = createHistory();
-      history.push(`${route}`);
-    }
+export function setRoute(route) {
+  if (route) {
+    const history = createHistory();
+    history.push(`${route}`);
   }
+};
 
-  /**
-   * @function getSlug
-   *
-   * @return { string }
-   * @public
-   *
-  */
+/**
+ * @function getSlug
+ *
+ * @return { string }
+ * @public
+ *
+*/
 
-  const getSlug = () => encodeURIComponent(window.location.hostname);
+export function getSlug(){
+  return encodeURIComponent(window.location.hostname);
+};
 
-  return {
-    setRoute,
-    getSlug,
-  };
-
-})();
-
-export default locationHelper;
