@@ -11,7 +11,7 @@
   *
 */
 
-export function saveIntoCookies(key, payload = null) {
+function saveIntoCookies(key, payload = null) {
 
   if (key) {
     const value = btoa(JSON.stringify(payload));
@@ -33,7 +33,7 @@ export function saveIntoCookies(key, payload = null) {
   *
 */
 
-export function getFromCookies(key) {
+function getFromCookies(key) {
   if (key) {
     const escape = (s) => s.replace(/([.*+?^${}()|[\]/\\])/g, '\\$1');
     let match = document.cookie.match(RegExp('(?:^|;\\s*)' + escape(key) + '=([^;]*)'));
@@ -52,8 +52,14 @@ export function getFromCookies(key) {
   *
 */
 
-export function deleteFromCookies(key) {
+function deleteFromCookies(key) {
   if (key) {
     document.cookie = `${encodeURIComponent(key)}=; expires=; path=/`;
   }
 };
+
+export {
+  saveIntoCookies as save,
+  getFromCookies as get,
+  deleteFromCookies as delete,
+}

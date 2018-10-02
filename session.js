@@ -10,7 +10,7 @@
   *
 */
 
-export function saveInStorage(key, payload = {}) {
+function saveInStorage(key, payload = {}) {
   sessionStorage.setItem(key, btoa(JSON.stringify(payload)))
 };
 
@@ -26,7 +26,7 @@ export function saveInStorage(key, payload = {}) {
   *
 */
 
-export function getFromStorage(key) {
+function getFromStorage(key) {
   const data = sessionStorage.getItem(key);
   return (data) ? JSON.parse(atob(data)) : null;
 };
@@ -41,6 +41,13 @@ export function getFromStorage(key) {
  *
 */
 
-export function deleteOfStorage(key) {
+function deleteOfStorage(key) {
   sessionStorage.removeItem(key);
 };
+
+
+export {
+  saveInStorage as save,
+  getFromStorage as get,
+  deleteOfStorage as delete,
+}
