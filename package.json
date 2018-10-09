@@ -1,6 +1,6 @@
 {
   "name": "javascript-helpers-package",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Javascript helpers package",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wellitongervickas/my-helpers.git"
+    "url": "git+https://github.com/wellitongervickas/javascript-helpers-package.git"
   },
   "keywords": [
     "javascript",
@@ -22,9 +22,9 @@
   "author": "Welliton Gervickas",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wellitongervickas/my-helpers/issues"
+    "url": "https://github.com/wellitongervickas/javascript-helpers-package/issues"
   },
-  "homepage": "https://github.com/wellitongervickas/my-helpers#readme",
+  "homepage": "https://github.com/wellitongervickas/javascript-helpers-package#readme",
   "dependencies": {
     "moment": "^2.22.2"
   }
