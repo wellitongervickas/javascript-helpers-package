@@ -1,5 +1,5 @@
 {
-  "name": "my-helpers",
+  "name": "javascript-helpers-package",
   "version": "1.0.0",
   "description": "Javascript helpers package",
   "main": "index.js",
