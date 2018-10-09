@@ -1,0 +1,31 @@
+{
+  "name": "my-helpers",
+  "version": "1.0.0",
+  "description": "Javascript helpers package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wellitongervickas/my-helpers.git"
+  },
+  "keywords": [
+    "javascript",
+    "helper",
+    "text",
+    "date",
+    "cookies",
+    "session",
+    "storage"
+  ],
+  "author": "Welliton Gervickas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wellitongervickas/my-helpers/issues"
+  },
+  "homepage": "https://github.com/wellitongervickas/my-helpers#readme",
+  "dependencies": {
+    "moment": "^2.22.2"
+  }
+}
