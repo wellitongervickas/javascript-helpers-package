@@ -2,10 +2,10 @@
 
 ### Availables Heleprs
 
-# Cookies
-# Email
-# List
-# Location
-# Text
-# Session
-# Window
+#### Cookies
+#### Email
+#### List
+#### Location
+#### Text
+#### Session
+#### Window
