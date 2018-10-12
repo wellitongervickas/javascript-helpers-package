@@ -25,6 +25,7 @@ export function parse(number) {
     number = number.replace(/[^\d]/g,'');
 
     if (number.match(/^([5]{2})\d+/g) && number.length >= 12) {
+
       if (number.length === 12) {
 
         return  `${number.slice(0, 2)} (${number.slice(2, 4)}) ${number.slice(4, 8)}-${number.slice(8)}`;
@@ -35,11 +36,11 @@ export function parse(number) {
 
         return number;
       }
+
     } else if (number.match(/^([5]{2})\d+/g) && number.length <= 11) {
 
       return  `(${number.slice(0, 2)}) ${number.slice(2, 7)}-${number.slice(7)}`;
     } else if (number.match(/[0][0-9][0]{2}\d+/g)) {
-
       return  `${number.slice(0, 4)} ${number.slice(4, 7)} ${number.slice(7)}`;
     } else {
 

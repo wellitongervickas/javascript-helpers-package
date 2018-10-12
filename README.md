@@ -1,10 +1,10 @@
 # Javascript Helpers Packages
 > Most used helpers packages
 
-### Install
+## Install
 > npm install javascript-helpers-package
 
-### Availables Helpers
+## Availables Helpers
 
 #### Cookies
 > import { cookiesHelper } from 'javascript-helpers-package';
@@ -12,18 +12,21 @@
 ##### Usage
 ```javascript
 // Save in to Cookies
-cookiesHelper.save(key, payload)
+cookiesHelper.save(key, payload) // Save object
 
 // Get from Cookies
-cookiesHelper.get(key)
+cookiesHelper.get(key) // Return object
 
 // Delete from Cookies
-cookiesHelper.delete(key)
+cookiesHelper.delete(key) // Clear on cookies
 ```
-
 #### Email
 > import { emailHelper } from 'javascript-helpers-package';
 
+##### Usage
+```javascript
+emailHelper.isValid(email) // Return true/false
+```
 #### List
 > import { listHelper } from 'javascript-helpers-package';
 
@@ -57,5 +60,4 @@ import { phoneHelper } from 'javascript-helpers-package';
 ##### Usage
 ```javascript
 phoneHelper.parse(number)
-
 ```
